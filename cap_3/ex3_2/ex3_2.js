@@ -1,10 +1,26 @@
-function idealPeso () {
+    function clear() { 
+
+        // Assim você limpa o conteúdo dos elementos 
+        window.document.getElementById('namePerson').value = ""
+        window.document.getElementById('masc').checked = false
+        window.document.getElementById('fem').checked = false
+        window.document.getElementById('heightPerson').value = ""
+
+        // Posiciona o fofo no elemento 'namePerson' 
+        window.document.getElementById('namePerson').focus()
+
+    }
+
+    let clearButton = window.document.getElementById('buttonLimpar')
+    clearButton.addEventListener('click', clear)
+
+    function idealPeso () {
 
     //Variáveis que fazem referências aos campos criados em HTML (Nota: .checked é importante em um type="radio" pois quando eu lançar uma condição, preciso ver se o que eu escolhi está checado OU não.)
-    let nomePessoa = window.document.getElementById('namePerson').value
-    let genderMan = window.document.getElementById('masc').checked
-    let genderWoman = window.document.getElementById('fem').checked
-    let heightP = window.document.getElementById('heightPerson').value
+        let nomePessoa = window.document.getElementById('namePerson').value
+        let genderMan = window.document.getElementById('masc').checked
+        let genderWoman = window.document.getElementById('fem').checked
+        let heightP = window.document.getElementById('heightPerson').value
 
 
     //Condição para detectar se algum campo deixou de ser preenchido ou se não houve check no gênero. Caso positivo para um OU outro, alerta na tela. 
@@ -33,4 +49,4 @@ function idealPeso () {
 }
 
     let buttonPeso = window.document.getElementById('buttonCalcular')
-    buttonPeso.addEventListener('click', idealPeso)
+    buttonPeso.addEventListener('click', idealPeso) 
