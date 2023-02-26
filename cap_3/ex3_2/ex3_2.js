@@ -30,16 +30,19 @@
 
     // se altura vazio (0) ou Not a Number (um texto for informado, por exemplo), alerta na tela.
     if (heightP == 0 || isNaN(heightP)) {
+        
         window.alert('[ERRO] Por favor, informe a altura corretamente')
         heightP.focus(); 
         return;
     }
     // Se FEMININO (if genderWoman == true)
     if (genderWoman) { 
+
         let pesoFem = parseFloat((Number(21) * Math.pow(heightP, 2))).toFixed(1)
         let resposta = window.document.getElementById('resposta').textContent = (`${nomePessoa}: seu peso ideal é ${pesoFem}`)
     
     } else {
+        
         let pesoMasc = parseFloat((Number(22) * Math.pow(heightP, 2))).toFixed(1)
 
         //Apresenta a resposta na tela do navegador.
