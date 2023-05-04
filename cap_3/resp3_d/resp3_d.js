@@ -10,10 +10,10 @@ function Calcular() {
     if (ladoUm == ladoDois && ladoDois == ladoTres && ladoTres == ladoUm) { 
         const resposta = window.document.getElementById('resposta1').textContent = (`Lados Podem Formar um Triângulo`)
         const resposta2 = window.document.getElementById('resposta2').textContent = (`Tipo: Equilatero`)
-    } else if (ladoUm !== ladoDois && ladoDois == ladoTres && ladoTres == ladoUm || ladoUm == ladoDois && ladoDois !== ladoTres && ladoDois == ladoUm || ladoUm == ladoDois && ladoDois == ladoTres && ladoTres !== ladoUm) { 
+    } else if (ladoUm == ladoDois && ladoDois !== ladoTres || ladoDois == ladoTres && ladoTres !== ladoUm || ladoTres == ladoUm && ladoUm !== ladoDois) { 
         const resposta = window.document.getElementById('resposta1').textContent = (`Lados Podem Formar um Triângulo`)
         const resposta2 = window.document.getElementById('resposta2').textContent = (`Tipo: Isósceles`)
-    } else if (ladoUm !== ladoDois !== ladoTres !== ladoUm) {
+    } else {
         const resposta = window.document.getElementById('resposta1').textContent = (`Lados Podem Formar um Triângulo`)
         const resposta2 = window.document.getElementById('resposta2').textContent = (`Tipo: Escaleno`)
     }
