@@ -30,6 +30,7 @@ function Calcular () {
             const resposta = window.document.getElementById('tempo').textContent = (`Tempo - 60 minutos`) 
             const resposta2 = window.document.getElementById('troco').textContent = (`Troco - R$: ${troco2}`)
         }
+        
     if (coin === 3) {
         const resposta = window.document.getElementById('tempo').textContent = (`Tempo - 120 minutos`)
     }
