@@ -10,4 +10,8 @@ This is a Repo containing some logic exercices from the Book "Lógica de Program
 
 </div>
 
+<div align="center">
+
 You can buy the book clicking [HERE](https://novatec.com.br/livros/logica-programacao-algoritmos-com-javascript-2ed/)
+
+</div>
