@@ -1,4 +1,5 @@
 function Tabuada () {
+    
     let num = window.document.getElementById('numero')
     let number = Number(num.value)
     let tabuadaString = ("")

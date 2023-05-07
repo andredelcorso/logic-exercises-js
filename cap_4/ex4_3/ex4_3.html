@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    do { 
+
+        let num = Number(prompt("Número: "))
+
+            if (num == 0 || isNaN(num)) {
+                alert('Digite um número válido')
+            } 
+
+        } while (num == 0 || isNaN(num))
+
+        // Declara e inicializa variável que irá exibir pares
+
+        let pares = "Pares entre 1 e" + num +": "
+
+
+        // isola o primeiro par (para evitar última vírgula)
+        if (num > 1) {
+            pares = pares + "2"
+        }
+
+        // laço para acumular pares (inicia no 4, pois o 2 já foi atribuido)
+
+        for (let contador = 4; contador <= num; contador = contador + 2) {
+            pares = pares + "," + contador 
+        }
+
+        alert(pares);
+
+</script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        alert("Digite 0 para sair")
+
+        //Início da repetição
+        do { 
+
+            let number = Number(prompt('Insira um número: '))
+
+            if (number == 0 || isNaN(number)) {
+
+                let out = confirm("Confirma Saída?")
+
+                    if (out) { 
+                        break
+                    } else {
+                        continue
+                    }
+                }
+        
+        
+        if (number % 2 == 0) { 
+            alert('O dobro de ' + number + " é: " + number * 2)
+
+        } else {
+
+            alert("O triplo de " + number + " é: " + number * 3)
+        }
+
+        }  while (true); 
+        
+        alert("Bye, bye...")
+        
+
+    </script>
+</html>
