@@ -7,14 +7,14 @@ function Calcular() {
 
   if (Chinchilas == 0 || Chinchilas < 2 || isNaN(Chinchilas) || Anos == 0 || isNaN(Anos)) {
     alert('Favor, verificar os dados. Obs.: O número inicial de Chinchilas deve ser igual ou superior a 02');
-    return; // Exit the function if the data is invalid
+    return; // Exit the function if some data is invalid
   }
 
     resposta = "" // Reset the resposta variable
 
     for (let contador = 1; contador <= Anos; contador++) {    
-            resposta += contador + "º Ano: " + Chinchilas + " Chinchilas\n"
-            Chinchilas = Chinchilas * 3
+      resposta += contador + "º Ano: " + Chinchilas + " Chinchilas\n"
+      Chinchilas = Chinchilas * 3
     }
 
     document.getElementById('resposta').textContent = resposta
