@@ -4,7 +4,7 @@ const kids = [] // Creating the
 
 function adicionar () { 
 
-    let list = '' // Reseting the list inside the function
+    list = '' // Reseting the list inside the function (YOU DON'T NEED TO DECLARE ANOTHER VARIABLE. JUST CALL THE LIST.)
 
     // Creating the HTML references 
     let nome = document.getElementById('nomeBox').value 
@@ -17,7 +17,7 @@ function adicionar () {
         alert('Favor, verificar se os dados foram inseridos corretamente e tente outra vez.') // Validating if the information inserted is correct
     } else { 
         for (let contador = 0; contador < kids.length; contador++) { 
-            list += (`${kids[contador].nome}) - ${kids[contador].idade} anos.`) // generating a loop to add how many kids I want to add. 
+            list += (`${kids[contador].nome} - ${kids[contador].idade} ano(s). \n   `) // generating a loop to add how many kids I want to add. 
         }
     }
 
