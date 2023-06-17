@@ -46,7 +46,7 @@ function calcular () {
         }
 
         for (let contador = 0; contador < carros.length; contador ++) {
-            if (carros[contador].price >= maximo) {
+            if (carros[contador].price <= maximo) {
                 list += carros[contador].text + " - R$: " + carros[contador].price.toFixed(2) + "\n"
             }
         }
@@ -56,8 +56,8 @@ function calcular () {
         if (list == "") {
             outLista.textContent = "Não há carros com preço até R$ " + maximo.toFixed(2)
         } else { 
-            outLista.textContent = "Carros até R$ " + maximo.toFixed(2) + "\n" + list + 
-                "\n-----------------------------------------------------\n" 
+            outLista.textContent = "Carros até R$ " + maximo.toFixed(2) + "\n" + 
+                "\n-----------------------------------------------------\n" + list
         }
                   
     }
