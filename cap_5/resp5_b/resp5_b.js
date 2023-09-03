@@ -2,9 +2,8 @@ let listNumber = '' //Adding numbers into a list
 
 let numerico = [] // creating the vector  
 
-let n = document.getElementById('inputNumber')
-
 function addNumber() {
+
     let n = document.getElementById('inputNumber');
     let number = Number(n.value);
     
@@ -12,7 +11,7 @@ function addNumber() {
         alert('Favor, adicionar um valor válido e não repetido!');
         n.focus();
         return;
-        
+
     } else {
         numerico.push(number);
     }
