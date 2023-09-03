@@ -6,12 +6,12 @@ This is a Repo containing some logic exercices from the Book "Lógica de Program
 
 <div align = "center">
 
-![Capa do Livro](https://s3.novatec.com.br/capas-ampliadas/capa-ampliada-9786586057904.jpg)
+![Capa do Livro](https://s3.novatec.com.br/capas-ampliadas/capa-ampliada-9788575226568.jpg)
 
 </div>
 
 <div align="center">
 
-You can buy the book clicking [HERE](https://novatec.com.br/livros/logica-programacao-algoritmos-com-javascript-2ed/)
+You can buy the book clicking [HERE](https://novatec.com.br/livros/logica-programacao-algoritmos-com-javascript/)
 
 </div>
