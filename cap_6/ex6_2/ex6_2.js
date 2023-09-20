@@ -1,7 +1,7 @@
 function fruit () { 
 
     let fruitText = document.getElementById('txtFruit')
-    let fruit = fruitText.value
+    let fruit = fruitText.value.toUpperCase()
 
     if (fruit == "") {
         alert('Informe uma fruta...')
@@ -14,15 +14,16 @@ function fruit () {
     let len = fruit.length
 
     for (let counter = 1; counter < len; counter++) {
+
         if (fruit.charAt(counter) == fruit.charAt(0)) {
-            resposta += fruta.charAt(0)
+            resposta += fruit.charAt(0)
         } else { 
             resposta += "_"
         }
             star += "*"
         
-            outDica.textContent = resposta
-    fruitText.value = star 
+        outDica.textContent = resposta
+        fruitText.value = star 
 
     }
 
