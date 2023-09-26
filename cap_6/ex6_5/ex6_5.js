@@ -12,7 +12,7 @@ function generateEmail () {
         return
     }
 
-    let email = ""
+    let email = "" 
 
     let tamanho = divide.length
 
@@ -23,6 +23,5 @@ function generateEmail () {
     email += divide[tamanho-1] + "@"+empresa+".com.br"
 
     resposta.textContent = "E-mail: " + email.toLowerCase()
-
 
 }
