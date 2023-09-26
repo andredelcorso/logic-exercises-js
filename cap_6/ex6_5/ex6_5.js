@@ -16,7 +16,7 @@ function generateEmail () {
 
     let tamanho = divide.length
 
-    for (contador = 0; contador < tamanho; contador ++) { 
+    for (contador = 0; contador < tamanho-1; contador ++) { 
         email += divide[contador].charAt(0)
     }
 
