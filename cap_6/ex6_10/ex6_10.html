@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+
+        <h1>
+            Pagamento de Contas
+        </h1>
+
+        <div class="dataVencimento">
+
+            <p>
+                Data de Vencimento: <input type="date" name="txtBox" id="txtBox">
+            </p>
+
+        </div>
+
+        <div class="priceBox">
+
+            <p>
+                Valor da conta. R$: <input type="number" name="priceValue" id="priceValue">
+            </p>
+
+        </div>
+
+        <div class="checkButton">
+            <input type="button" value="Pagar Conta" id="payBtn" onclick="payBills()">
+        </div>
+        
+    </section>
+
+    <pre id="valorMulta">
+
+    </pre>
+
+    <pre id="valorJuros">
+
+    </pre>
+
+    <pre id="resposta">
+
+    </pre>
+    
+</body>
+<script src="ex6_10.js"></script>
+</html>

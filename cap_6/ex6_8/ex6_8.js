@@ -6,7 +6,8 @@ let tod = document.getElementById('todayIS')
 function getDate () { 
 
     function oneMoreDigit(digit) { 
-        if (digit < 10) { 
+
+        if (digit < 10) {
             return ('0' + digit) 
             } else {
                 return (digit)
@@ -30,6 +31,7 @@ function getDate () {
 
     let currentdate = date.format()
     resposta.textContent = currentdate
+
 }
 
 getDate()
